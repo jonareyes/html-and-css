@@ -58,3 +58,44 @@ footer {
     text-align: center;
     margin-top: 30px;
 }
+
+/* Estilos para la Navbar de Bootstrap */
+header .navbar { /* Mayor especificidad para sobrescribir bg-dark */
+    background-color: #003366 !important; /* Azul oscuro, !important puede ser necesario */
+    padding-top: 0.5rem; /* Ajustar padding si es necesario, Bootstrap ya tiene algunos */
+    padding-bottom: 0.5rem;
+}
+
+/* Si el padding del header interfiere, podemos resetearlo para la navbar o ajustar el header */
+/* header { padding: 0; } /* Descomentar si el padding del header causa problemas con la navbar */
+
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff; /* Asegurar que el brand sea blanco si navbar-dark no es suficiente */
+}
+
+.navbar-nav .nav-link {
+    color: #f0f0f0; /* Un gris claro para los enlaces */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc; /* Gris más claro o un color de acento */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ffffff !important; /* Asegurar que el activo sea blanco y destacado */
+}
+
+/* Para el toggler, navbar-dark debería funcionar. Si no: */
+/*
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+*/
