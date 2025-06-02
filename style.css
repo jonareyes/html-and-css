@@ -1,3 +1,60 @@
-p {
-	color:red;
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos para los bloques hijos */
+.block {
+    flex-basis: 30%;
+    padding: 15px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Estilos específicos para la sección Hero */
+#hero {
+    background-color: #e0e0e0; /* Fondo distintivo para el hero */
+    padding: 50px 20px; /* Mayor padding para el hero */
+    flex-basis: 100%; /* El hero puede ocupar todo el ancho si se desea, o ajustarse con los demás bloques */
+}
+
+#hero p {
+    font-size: 1.2em; /* Texto más grande en el hero */
+    color: #333; /* Color de texto oscuro para el hero, si es necesario sobreescribir .block p */
+}
+
+/* Estilos para los párrafos dentro de los bloques (general) */
+.block p {
+    color: black; /* Asegura legibilidad */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
 }
